@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./scss/shop.css">
+    
+</head>
+<body>
+    <!-- Navbar Start -->
+
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" style="height: 80px;">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" >
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto ">
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Pages</a>
+              </li>
+              <li class="nav-item cart-page">
+                <a class="nav-link active" href="./cart.html">Cart (<span>0</span>)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contact</a>
+              </li>
+            </ul>
+
+            <ul class="action-list d-flex align-items-center ">
+                <li class="axil-search d-xl-block d-none">
+                    <input type="search"  name="search2" id="search2" value="" maxlength="128" placeholder="What are you looking for?" >
+                    <button type="submit" class="icon wooc-btn-search">
+                        <box-icon name='search' color="#292930" class="heart-ic"></box-icon>
+                    </button>
+                </li>
+                <li class="axil-search d-xl-none d-block">
+                    <a  class="header-search-icon" title="Search">
+                        <box-icon name='search'></box-icon>
+                    </a>
+                </li>
+                <li class="wishlist">
+                    <a>
+                        <box-icon class="mx-2" color="#77777" name='heart' ></box-icon>
+                    </a>
+                </li>
+                <li class="shopping-cart">
+                    <a style="cursor:pointer;"  class="card-sidebar-btn">
+                        <box-icon class="mx-2" name='cart'  ></box-icon>
+
+                    </a>
+                </li>
+                <li class="my-account">
+                    <a style="cursor:pointer;" >
+                        <box-icon class="mx-2"  name='user' ></box-icon>
+
+                    </a>
+                    <div class="my-account-dropdown">
+                        <span class="title">QUICKLINKS</span>
+                        <ul>
+                            <li>
+                                <a href="my-account.html">My Account</a>
+                            </li>
+                            <li>
+                                <a href="#">Initiate return</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                            <li>
+                                <a href="#">Language</a>
+                            </li>
+                        </ul>
+                        <div class="login-btn">
+                            <a href="sign-in.html" class="axil-btn btn-bg-primary">Login</a>
+                        </div>
+                        <div class="reg-footer text-center">No account yet? <a href="sign-up.html" class="btn-link">REGISTER HERE.</a></div>
+                    </div>
+                </li>
+                
+            </ul>
+
+          
+            
+          </div>
+        </div>
+      </nav>
+
+    <!-- Navbar End -->
+
+    <!-- Ads Banner Start -->
+
+    <div class="header-top-campaign">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-5 col-lg-6 col-md-10">
+                    <div class="campaign-content text-center">
+                        <p class="mb-0">STUDENT NOW GET 10% OFF : <a href="#" style="color: #fff; text-decoration:underline" tabindex="-1">GET OFFER</a></p>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+    <!-- Ads Banner End -->
+
+    <!-- Shop Section Start -->
+
+   <section class="shop">
+     <!-- Header Start -->
+     <div class="axil-breadcrumb-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-8">
+                    <div class="inner">
+                        <ul class="axil-breadcrumb">
+                            <li class="axil-breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="separator"></li>
+                            <li class="axil-breadcrumb-item active" aria-current="page">My Account</li>
+                        </ul>
+                        <h1 class="title">Explore All Products</h1>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-4">
+                    <div class="inner">
+                        <div class="bradcrumb-thumb">
+                            <img src="./img/product-45.png" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Main Shop Start -->
+    <div class="shop-area padding--80">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-3">
+                    <div class="sidebar">
+                        <div class="t-list categories active">
+                            <h6 class="title">CATEGORIES</h6>
+                            <div class="sub-menu">
+                                <ul>
+                                    <li class="current-cat"><a href="#">Sun Care</a></li>
+                                    <li><a href="#">Night Care</a></li>
+                                    <li><a href="#">Treatments</a></li>
+                                    <li><a href="#">Moisturizers</a></li>
+                                    <li><a href="#">Eye Care</a></li>
+                                    <li><a href="#">Masks</a></li>
+                                    <li><a href="#">Featured</a></li>
+                                    <li><a href="#">On Sale</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="t-list gender active">
+                            <h6 class="title">GENDER</h6>
+                            <div class="sub-menu">
+                                <ul>
+                                    <li class="current-cat"><a href="#">Men(40)</a></li>
+                                    <li><a href="#">Women(56)</a></li>
+                                    <li><a href="#">Unisex(18)</a></li>
+                                   
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="t-list colors active">
+                            <h6 class="title">COLORS</h6>
+                            <div class="sub-menu">
+                                <ul>
+                                    <li class="chosen"><a href="#" class="color-extra-01"></a></li>
+                                    <li><a href="#" class="color-extra-02"></a></li>
+                                    <li><a href="#" class="color-extra-03"></a></li>
+                                    <li><a href="#" class="color-extra-04"></a></li>
+                                    <li><a href="#" class="color-extra-05"></a></li>
+                                    <li><a href="#" class="color-extra-06"></a></li>
+                                    <li><a href="#" class="color-extra-07"></a></li>
+                                    <li><a href="#" class="color-extra-08"></a></li>
+                                    <li><a href="#" class="color-extra-09"></a></li>
+                                    <li><a href="#" class="color-extra-10"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="t-list size active">
+                            <h6 class="title">SIZE</h6>
+                            <div class="sub-menu">
+                                <ul>
+                                    <li class="chosen"><a href="#">XS</a></li>
+                                    <li><a href="#">S</a></li>
+                                    <li><a href="#">M</a></li>
+                                    <li><a href="#">L</a></li>
+                                    <li><a href="#">XL</a></li>
+                                    <li><a href="#">XXL</a></li>
+                                    <li><a href="#">3XL</a></li>
+                                    <li><a href="#">4XL</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="t-list price active">
+                            <h6 class="title">PRICE</h6>
+                            <div class="sub-menu">
+                                <ul>
+                                    <li class="chosen"><a href="#">30</a></li>
+                                    <li><a href="#">5000</a></li>
+                                </ul>
+                                <form action="#" class="mt--25">
+                                    <div id="slider-range" class="ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+                                        <div class="ui-slider-range ui-corner-all ui-widget-header" style="left: 0%; width: 60%;"></div>
+                                        <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default ui-1" style="left: 0%;"></span>
+                                    </div>
+                                    <div class="flex-center mt--20">
+                                        <!-- <span class="input-range">Price: </span>
+                                        <input type="text" id="amount" class="amount-range" readonly=""> -->
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <button class="axil-btn btn-bg-primary">All Reset</button>
+                    </div>
+                </div>
+                <div class="col-lg-9 mm-sec">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="axil-shop-top mb--30">
+                                <div class="category-select align-items-center justify-content-lg-end justify-content-between">
+                                    <!-- Start Single Select  -->
+                                    <span class="filter-results">Showing 1-12 of 84 results</span>
+                                    <select class="single-select">
+                                        <option>Short by Latest</option>
+                                        <option>Short by Oldest</option>
+                                        <option>Short by Name</option>
+                                        <option>Short by Price</option>
+                                    </select>
+                                    <!-- End Single Select  -->
+                                </div>
+                                <div class="d-lg-none">
+                                    <button class="product-filter-mobile filter-toggle"><i class="fas fa-filter"></i> FILTER</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="shop-boxes" class="row">
+                       
+                        
+                    </div>
+
+                    <div class="text-center pt--20">
+                        <a href="#" class="axil-btn btn-bg-lighter btn-load-more">Load more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Shop End -->
+
+    <!-- NewsLetter Section Start -->
+    <div class="newsletter-area padding--80 pt-0">
+        <div class="container">
+            <div class="etrade-newsletter-wrapper bg_image bg_image--5">
+                <div class="newsletter-content">
+                    <span class="title-highlighter highlighter-primary2">
+                        <i class="fas fa-envelope-open"></i>Newsletter</span>
+                    <h2 class="title mb--40 mb_sm--30">Get weekly update</h2>
+                    <div class="input-group newsletter-form">
+                        <div class="position-relative newsletter-inner mb--15">
+                            <input placeholder="example@gmail.com" type="text">
+                        </div>
+                        <button type="submit" class="axil-btn mb--15">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End .container -->
+    </div>
+    <!-- NewsLetter Section End -->
+   </section>
+    <!-- Shop Section End -->
+
+    <!-- Service Area Start -->
+
+    <div class="service-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="service-box service-style-2">
+                        <div class="icon">
+                            <img src="./img/service1.png" alt="Service">
+                        </div>
+                        <div class="content">
+                            <h6 class="title">Fast &amp; Secure Delivery</h6>
+                            <p>Tell about your service.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+                    <div class="service-box service-style-2">
+                        <div class="icon">
+                            <img src="./img/service2.png" alt="Service">
+                        </div>
+                        <div class="content">
+                            <h6 class="title">Money Back Guarantee</h6>
+                            <p>Within 10 days.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+                    <div class="service-box service-style-2">
+                        <div class="icon">
+                            <img src="./img/service3.png" alt="Service">
+                        </div>
+                        <div class="content">
+                            <h6 class="title">24 Hour Return Policy</h6>
+                            <p>No question ask.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+                    <div class="service-box service-style-2">
+                        <div class="icon">
+                            <img src="./img/service4.png" alt="Service">
+                        </div>
+                        <div class="content">
+                            <h6 class="title">
+                                Pro Quality Support</h6>
+                            <p>24/7 Live support.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Area ENd -->
+
+    <!-- Footer Start -->
+    <footer class="axil-footer-area footer-style-2">
+        <!-- Start Footer Top Area  -->
+        <div class="footer-top separator-top">
+            <div class="container">
+                <div class="row">
+                    <!-- Start Single Widget  -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="axil-footer-widget">
+                            <h5 class="widget-title">Support</h5>
+                            
+                            <div class="inner">
+                                <p>685 Market Street, <br>
+                                Las Vegas, LA 95820, <br>
+                                United States.
+                                </p>
+                                <ul class="support-list-item">
+                                    <li><a href="mailto:example@domain.com"><i class="fa-solid fa-envelope"></i> example@domain.com</a></li>
+                                    <li><a href="tel:(+01)850-315-5862"><i class="fa-solid fa-phone"></i> (+01) 850-315-5862</a></li>
+                                    <!-- <li><i class="fal fa-map-marker-alt"></i> 685 Market Street,  <br> Las Vegas, LA 95820, <br> United States.</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Widget  -->
+                    <!-- Start Single Widget  -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="axil-footer-widget">
+                            <h5 class="widget-title">Account</h5>
+                            <div class="inner">
+                                <ul>
+                                    <li><a href="my-account.html">My Account</a></li>
+                                    <li><a href="sign-up.html">Login / Register</a></li>
+                                    <li><a href="cart.html">Cart</a></li>
+                                    <li><a href="wishlist.html">Wishlist</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Widget  -->
+                    <!-- Start Single Widget  -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="axil-footer-widget">
+                            <h5 class="widget-title">Quick Link</h5>
+                            <div class="inner">
+                                <ul>
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                    <li><a href="terms-of-service.html">Terms Of Use</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Widget  -->
+                    <!-- Start Single Widget  -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="axil-footer-widget">
+                            <h5 class="widget-title">Download App</h5>
+                            <div class="inner">
+                                <span>Save $3 With App &amp; New User only</span>
+                                <div class="download-btn-group">
+                                    <div class="qr-code">
+                                        <img src="./img/qr.png" alt="Axilthemes">
+                                    </div>
+                                    <div class="app-link">
+                                        <a href="#">
+                                            <img src="./img/app-store.png" alt="App Store">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./img/play-store.png" alt="Play Store">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Widget  -->
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Top Area  -->
+        <!-- Start Copyright Area  -->
+        <div class="copyright-area copyright-default separator-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-4">
+                        <div class="social-share">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-12">
+                        <div class="copyright-left d-flex flex-wrap justify-content-center">
+                            <ul class="quick-link">
+                                <li>© 2022. All rights reserved by <a target="_blank" href="https://axilthemes.com/">Axilthemes</a>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-12">
+                        <div class="copyright-right d-flex flex-wrap justify-content-xl-end justify-content-center align-items-center">
+                            <span class="card-text">Accept For</span>
+                            <ul class="payment-icons-bottom quick-link">
+                                <li><img src="./img/cart-1.png" alt="paypal cart"></li>
+                                <li><img src="./img/cart-2.png" alt="paypal cart"></li>
+                                <li><img src="./img/cart-3.png" alt="paypal cart"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Copyright Area  -->
+    </footer>
+    <!-- Footer End -->
+
+    <div class="card-sidebar" id="card-sidebar">
+        <div class="cart-content-wrap">
+            <div class="cart-header">
+                <h2 class="header-title">Cart review</h2>
+                <button class="cart-close sidebar-close"><box-icon name='x' ></box-icon></button>
+            </div>
+            <div class="cart-body">
+                <ul class="cart-item-list p-0">
+             
+                
+                </ul>
+            </div>
+            <div class="cart-footer">
+                <h3 class="cart-subtotal">
+                    <span class="subtotal-title">Subtotal:</span>
+                    <span class="subtotal-amount">$0</span>
+                </h3>
+                <div class="group-btn">
+                    <a href="cart.html" class="axil-btn btn-bg-primary viewcart-btn">View Cart</a>
+                    <a href="checkout.html" class="axil-btn btn-bg-secondary checkout-btn">Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+    <div id="backdrop" class=""></div>
+    
+    <script src="./js/data.js"></script>
+<script src="./js/main.js"></script>
+<script src="./js/addtocart.js"></script>
+
+   
+  
+    
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

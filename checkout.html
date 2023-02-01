@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.diveme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="./scss/checkout.css">
+</head>
+<body>
+
+    
+      <!-- Navbar Start -->
+
+      <nav class="navbar navbar-expand-lg bg-light " style="height: 80px;">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" >
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto ">
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Pages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contact</a>
+              </li>
+            </ul>
+
+            <ul class="action-list d-flex align-items-center ">
+                <li class="axil-search d-xl-block d-none">
+                    <input type="search"  name="search2" id="search2" value="" maxlengdiv="128" placeholder="What are you looking for?" >
+                    <button type="submit" class="icon wooc-btn-search">
+                        <box-icon name='search' color="#292930" class="heart-ic"></box-icon>
+                    </button>
+                </li>
+                <li class="axil-search d-xl-none d-block">
+                    <a  class="header-search-icon" title="Search">
+                        <box-icon name='search'></box-icon>
+                    </a>
+                </li>
+                <li class="wishlist">
+                    <a>
+                        <box-icon class="mx-2" color="#77777" name='heart' ></box-icon>
+                    </a>
+                </li>
+                <li class="shopping-cart">
+                    <a href="#" class="cart-dropdown-btn">
+                        <box-icon class="mx-2" name='cart'  ></box-icon>
+
+                    </a>
+                </li>
+                <li class="my-account">
+                    <a >
+                        <box-icon class="mx-2"  name='user' ></box-icon>
+
+                    </a>
+                    <div class="my-account-dropdown d-none">
+                        <span class="title">QUICKLINKS</span>
+                        <ul>
+                            <li>
+                                <a href="my-account.html">My Account</a>
+                            </li>
+                            <li>
+                                <a href="#">Initiate return</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                            <li>
+                                <a href="#">Language</a>
+                            </li>
+                        </ul>
+                        <div class="login-btn">
+                            <a href="sign-in.html" class="axil-btn btn-bg-primary">Login</a>
+                        </div>
+                        <div class="reg-footer text-center">No account yet? <a href="sign-up.html" class="btn-link">REGISTER HERE.</a></div>
+                    </div>
+                </li>
+                
+            </ul>
+
+          
+            
+          </div>
+        </div>
+      </nav>
+
+    <!-- Navbar End -->
+
+    <!-- Ads Banner Start -->
+
+    <div class="header-top-campaign">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-5 col-lg-6 col-md-10">
+                    <div class="campaign-content text-center">
+                        <p class="mb-0">STUDENT NOW GET 10% OFF : <a href="#" style="color: #fff; text-decoration:underline" tabindex="-1">GET OFFER</a></p>
+                    </div>
+                </div>
+                    
+            </div>
+        </div>
+    </div>
+    <!-- Ads Banner End -->
+
+    <!-- Checkout Start -->
+    <div class="checkout-area padding-main">
+        <div class="container">
+            <form action="#">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="axil-checkout-notice">
+                            <div class="axil-toggle-box">
+                                <div class="toggle-bar"><i class="fas fa-user"></i> Returning customer? <a  class="toggle-btn openbtn-1">Click here to login <i class="fas fa-angle-down"></i></a>
+                                </div>
+                                <div class="axil-checkout-login toggle-open d-none" >
+                                    <p>If you didn't Logged in, Please Log in first.</p>
+                                    <div class="signin-box">
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input type="email" class="form-control" name="email">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Password</label>
+                                            <input type="password" class="form-control" name="password">
+                                        </div>
+                                        <div class="form-group mb--0">
+                                            <button type="submit" class="axil-btn btn-bg-primary submit-btn">Sign In</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="axil-toggle-box">
+                                <div class="toggle-bar"><i class="fas fa-pencil"></i> Have a coupon? <a  class="toggle-btn openbtn-2">Click here to enter your code <i class="fas fa-angle-down"></i></a>
+                                </div>
+
+                                <div class="axil-checkout-coupon toggle-open d-none" >
+                                    <p>If you have a coupon code, please apply it below.</p>
+                                    <div class="input-group">
+                                        <input placeholder="Enter coupon code" type="text">
+                                        <div class="apply-btn">
+                                            <button type="submit" class="axil-btn btn-bg-primary">Apply</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="axil-checkout-billing">
+                            <h4 class="title mb--40">Billing details</h4>
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label>First Name <span>*</span></label>
+                                        <input type="text" id="first-name" placeholder="Adam">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label>Last Name <span>*</span></label>
+                                        <input type="text" id="last-name" placeholder="John">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Company Name</label>
+                                <input type="text" id="company-name">
+                            </div>
+                            <div class="form-group">
+                                <label>Country/ Region <span>*</span></label>
+                                <select id="Region">
+                                    <option value="3">Australia</option>
+                                    <option value="4">England</option>
+                                    <option value="6">New Zealand</option>
+                                    <option value="5">Switzerland</option>
+                                    <option value="1">United Kindom (UK)</option>
+                                    <option value="2">United States (USA)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Street Address <span>*</span></label>
+                                <input type="text" id="address1" class="mb--15" placeholder="House number and street name">
+                                <input type="text" id="address2" placeholder="Apartment, suite, unit, etc. (optonal)">
+                            </div>
+                            <div class="form-group">
+                                <label>Town/ City <span>*</span></label>
+                                <input type="text" id="town">
+                            </div>
+                            <div class="form-group">
+                                <label>Country</label>
+                                <input type="text" id="country">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone <span>*</span></label>
+                                <input type="tel" id="phone">
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address <span>*</span></label>
+                                <input type="email" id="email">
+                            </div>
+                            <div class="form-group input-group mb-5">
+                                <input type="checkbox" id="checkbox1" name="account-create">
+                                <label for="checkbox1">Create an account</label>
+                            </div>
+                            <div class="form-group different-shippng">
+                                <div class="toggle-bar mb-3">
+                                    <a  class="toggle-btn">
+                                        <input type="checkbox" id="checkbox2" name="diffrent-ship">
+                                        <label for="checkbox2">Ship to a different address?</label>
+                                    </a>
+                                </div>
+                                <div class="toggle-open form-details d-none ">
+                                    <div class="form-group">
+                                        <label>Country/ Region <span>*</span></label>
+                                        <select id="Region">
+                                            <option value="3">Australia</option>
+                                            <option value="4">England</option>
+                                            <option value="6">New Zealand</option>
+                                            <option value="5">Switzerland</option>
+                                            <option value="1">United Kindom (UK)</option>
+                                            <option value="2">United States (USA)</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Street Address <span>*</span></label>
+                                        <input type="text" id="address1" class="mb--15" placeholder="House number and street name">
+                                        <input type="text" id="address2" placeholder="Apartment, suite, unit, etc. (optonal)">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Town/ City <span>*</span></label>
+                                        <input type="text" id="town">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Country</label>
+                                        <input type="text" id="country">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Phone <span>*</span></label>
+                                        <input type="tel" id="phone">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Other Notes (optional)</label>
+                                <textarea id="notes" rows="2" placeholder="Notes about your order, e.g. speacial notes for delivery."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="axil-order-summery order-checkout-summery">
+                            <h5 class="title mb--20">Your Order</h5>
+                            <div class="summery-table-wrap">
+                                <table class="table summery-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Product</th>
+                                            <th>Subtotal</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="order-product">
+                                            <td>Commodo Blown Lamp <span class="quantity">x1</span></td>
+                                            <td>$117.00</td>
+                                        </tr>
+                                        <tr class="order-product">
+                                            <td>Commodo Blown Lamp <span class="quantity">x1</span></td>
+                                            <td>$198.00</td>
+                                        </tr>
+                                        <tr class="order-subtotal">
+                                            <td>Subtotal</td>
+                                            <td>$117.00</td>
+                                        </tr>
+                                        <tr class="order-shipping">
+                                            <td colspan="2">
+                                                <div class="shipping-amount d-flex justify-content-between">
+                                                    <span class="title">Shipping Method</span>
+                                                    <span class="amount">$35.00</span>
+                                                </div>
+                                                <div class="input-group">
+                                                    <input type="radio" id="radio1" name="shipping" checked="">
+                                                    <label for="radio1">Free Shippping</label>
+                                                </div>
+                                                <div class="input-group">
+                                                    <input type="radio" id="radio2" name="shipping">
+                                                    <label for="radio2">Local</label>
+                                                </div>
+                                                <div class="input-group">
+                                                    <input type="radio" id="radio3" name="shipping">
+                                                    <label for="radio3">Flat rate</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="order-total">
+                                            <td>Total</td>
+                                            <td class="order-total-amount">$323.00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="order-payment-method">
+                                <div class="single-payment">
+                                    <div class="input-group">
+                                        <input type="radio" id="radio4" name="payment">
+                                        <label for="radio4">Direct bank transfer</label>
+                                    </div>
+                                    <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.</p>
+                                </div>
+                                <div class="single-payment">
+                                    <div class="input-group">
+                                        <input type="radio" id="radio5" name="payment">
+                                        <label for="radio5">Cash on delivery</label>
+                                    </div>
+                                    <p>Pay with cash upon delivery.</p>
+                                </div>
+                                <div class="single-payment">
+                                    <div class="input-group justify-content-between align-items-center">
+                                        <div>
+                                            <input type="radio" id="radio6" name="payment" checked="">
+                                        <label for="radio6">Paypal</label>
+                                        </div>
+                                        <img src="./img/payment.png" alt="Paypal payment">
+                                    </div>
+                                    <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+                                </div>
+                            </div>
+                            <button type="submit" class="axil-btn btn-bg-primary checkout-btn">Process to Checkout</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Checkout end -->
+
+    
+      <!-- Service Area Start -->
+
+      <div class="service-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="service-box service-style-2">
+                        <div class="icon">
+                            <img src="./img/service1.png" alt="Service">
+                        </div>
+                        <div class="content">
+                            <h6 class="title">Fast &amp; Secure Delivery</h6>
+                            <p>Tell about your service.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+                    <div class="service-box service-style-2">
+                        <div class="icon">
+                            <img src="./img/service2.png" alt="Service">
+                        </div>
+                        <div class="content">
+                            <h6 class="title">Money Back Guarantee</h6>
+                            <p>Widivin 10 days.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+                    <div class="service-box service-style-2">
+                        <div class="icon">
+                            <img src="./img/service3.png" alt="Service">
+                        </div>
+                        <div class="content">
+                            <h6 class="title">24 Hour Return Policy</h6>
+                            <p>No question ask.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+                    <div class="service-box service-style-2">
+                        <div class="icon">
+                            <img src="./img/service4.png" alt="Service">
+                        </div>
+                        <div class="content">
+                            <h6 class="title">
+                                Pro Quality Support</h6>
+                            <p>24/7 Live support.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Service Area ENd -->
+
+    <!-- Footer Start -->
+    <footer class="axil-footer-area footer-style-2">
+        <!-- Start Footer Top Area  -->
+        <div class="footer-top separator-top">
+            <div class="container">
+                <div class="row">
+                    <!-- Start Single Widget  -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="axil-footer-widget">
+                            <h5 class="widget-title">Support</h5>
+                            
+                            <div class="inner">
+                                <p>685 Market Street, <br>
+                                Las Vegas, LA 95820, <br>
+                                United States.
+                                </p>
+                                <ul class="support-list-item">
+                                    <li><a href="mailto:example@domain.com"><i class="fa-solid fa-envelope"></i> example@domain.com</a></li>
+                                    <li><a href="tel:(+01)850-315-5862"><i class="fa-solid fa-phone"></i> (+01) 850-315-5862</a></li>
+                                    <!-- <li><i class="fal fa-map-marker-alt"></i> 685 Market Street,  <br> Las Vegas, LA 95820, <br> United States.</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Widget  -->
+                    <!-- Start Single Widget  -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="axil-footer-widget">
+                            <h5 class="widget-title">Account</h5>
+                            <div class="inner">
+                                <ul>
+                                    <li><a href="my-account.html">My Account</a></li>
+                                    <li><a href="sign-up.html">Login / Register</a></li>
+                                    <li><a href="cart.html">Cart</a></li>
+                                    <li><a href="wishlist.html">Wishlist</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Widget  -->
+                    <!-- Start Single Widget  -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="axil-footer-widget">
+                            <h5 class="widget-title">Quick Link</h5>
+                            <div class="inner">
+                                <ul>
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                    <li><a href="terms-of-service.html">Terms Of Use</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Widget  -->
+                    <!-- Start Single Widget  -->
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="axil-footer-widget">
+                            <h5 class="widget-title">Download App</h5>
+                            <div class="inner">
+                                <span>Save $3 Widiv App &amp; New User only</span>
+                                <div class="download-btn-group">
+                                    <div class="qr-code">
+                                        <img src="./img/qr.png" alt="Axildivemes">
+                                    </div>
+                                    <div class="app-link">
+                                        <a href="#">
+                                            <img src="./img/app-store.png" alt="App Store">
+                                        </a>
+                                        <a href="#">
+                                            <img src="./img/play-store.png" alt="Play Store">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Widget  -->
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Top Area  -->
+        <!-- Start Copyright Area  -->
+        <div class="copyright-area copyright-default separator-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-4">
+                        <div class="social-share">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-12">
+                        <div class="copyright-left d-flex flex-wrap justify-content-center">
+                            <ul class="quick-link">
+                                <li>© 2022. All rights reserved by <a target="_blank" href="https://axildivemes.com/">Axildivemes</a>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-12">
+                        <div class="copyright-right d-flex flex-wrap justify-content-xl-end justify-content-center align-items-center">
+                            <span class="card-text">Accept For</span>
+                            <ul class="payment-icons-bottom quick-link">
+                                <li><img src="./img/cart-1.png" alt="paypal cart"></li>
+                                <li><img src="./img/cart-2.png" alt="paypal cart"></li>
+                                <li><img src="./img/cart-3.png" alt="paypal cart"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Copyright Area  -->
+    </footer>
+    <!-- Footer End -->
+
+    <script src="./js/checkout.js"></script>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    
+</body>
+</html>

@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eTrade</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+<body>
+
+    <!-- Navbar Start -->
+
+   
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" style="height: 80px;">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" >
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto ">
+              <li class="nav-item">
+                <a class="nav-link active " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Pages</a>
+              </li>
+              <li class="nav-item cart-page">
+                <a class="nav-link active" href="./cart.html">Cart (<span>0</span>)</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contact</a>
+              </li>
+            </ul>
+
+            <ul class="action-list d-flex align-items-center ">
+                <li class="axil-search d-xl-block d-none">
+                    <input type="search"  name="search2" id="search2" value="" maxlength="128" placeholder="What are you looking for?" >
+                    <button type="submit" class="icon wooc-btn-search">
+                        <box-icon name='search' color="#292930" class="heart-ic"></box-icon>
+                    </button>
+                </li>
+                <li class="axil-search d-xl-none d-block">
+                    <a  class="header-search-icon" title="Search">
+                        <box-icon name='search'></box-icon>
+                    </a>
+                </li>
+                <li class="wishlist">
+                    <a>
+                        <box-icon class="mx-2" color="#77777" name='heart' ></box-icon>
+                    </a>
+                </li>
+                <li class="shopping-cart">
+                    <a style="cursor:pointer;"  class="card-sidebar-btn">
+                        <box-icon class="mx-2" name='cart'  ></box-icon>
+
+                    </a>
+                </li>
+                <li class="my-account">
+                    <a style="cursor:pointer;" >
+                        <box-icon class="mx-2"  name='user' ></box-icon>
+
+                    </a>
+                    <div class="my-account-dropdown">
+                        <span class="title">QUICKLINKS</span>
+                        <ul>
+                            <li>
+                                <a href="my-account.html">My Account</a>
+                            </li>
+                            <li>
+                                <a href="#">Initiate return</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                            <li>
+                                <a href="#">Language</a>
+                            </li>
+                        </ul>
+                        <div class="login-btn">
+                            <a href="sign-in.html" class="axil-btn btn-bg-primary">Login</a>
+                        </div>
+                        <div class="reg-footer text-center">No account yet? <a href="sign-up.html" class="btn-link">REGISTER HERE.</a></div>
+                    </div>
+                </li>
+                
+            </ul>
+
+          
+            
+          </div>
+        </div>
+      </nav>
+
+    <!-- Navbar End -->
+
+    <!-- The Categories Section Start -->
+    <section class="categories padding-main">
+        <div class="container">
+            <div class="product-area">
+                <div class="slider-area d-flex justify-content-between">
+                    <div class="section-title">
+                        <div class="d-flex gap-2 ctg">
+                            <box-icon name='shopping-bag' color="#ff497c"></box-icon>
+                            <p class="mb-0">The Categories</p>
+                        </div>
+                        <h2>Browse by Category</h2>
+                    </div>
+                
+                </div>
+                <div id="owl-one" class="owl-carousel owl-theme">
+                    <div class="item text-center">
+                        <a href="">
+                            <img src="./img/cat-09.png" class="img-fluid" alt="">
+                            <h6 class="cat-title">Art</h6>
+                        </a>
+                    </div>
+
+                    <div class="item text-center">
+                        <a href="">
+                            <img src="./img/cat-10.png" class="img-fluid" alt="">
+                            <h6 class="cat-title">Music</h6>
+                        </a>
+                    </div>
+
+                    <div class="item text-center">
+                        <a href="">
+                            <img src="./img/cat-11.png" class="img-fluid" alt="">
+                            <h6 class="cat-title">PhotoGraphy</h6>
+                        </a>
+                    </div>
+
+                    <div class="item text-center">
+                        <a href="">
+                            <img src="./img/cat-12.png" class="img-fluid" alt="">
+                            <h6 class="cat-title">Sports</h6>
+                        </a>
+                    </div>
+
+                    <div class="item text-center">
+                        <a href="">
+                            <img src="./img/cat-13.png" class="img-fluid" alt="">
+                            <h6 class="cat-title">Utility</h6>
+                        </a>
+                    </div>
+
+                    <div class="item text-center">
+                        <a href="">
+                            <img src="./img/cat-15.png" class="img-fluid" alt="">
+                            <h6 class="cat-title">Virtual</h6>
+                        </a>
+                    </div>
+
+                    <div class="item text-center">
+                        <a href="">
+                            <img src="./img/cat-09.png" class="img-fluid" alt="">
+                            <h6 class="cat-title">Art</h6>
+                        </a>
+                    </div>
+
+                    <div class="item text-center">
+                        <a href="">
+                            <img src="./img/cat-11.png" class="img-fluid" alt="">
+                            <h6 class="cat-title">Music</h6>
+                        </a>
+                    </div>
+
+                    <div class="item text-center">
+                        <a href="">
+                            <img src="./img/cat-12.png" class="img-fluid" alt="">
+                            <h6 class="cat-title">Utiliyu</h6>
+                        </a>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- The Categories Section End -->
+
+    <!-- Best Sellers Section Start -->
+    <section class="best-sellers padding-main">
+        <div class="container">
+            <div class="product-area">
+                <div class="slider-area d-flex justify-content-between">
+                    <div class="section-title">
+                        <div class="d-flex gap-2 ctg">
+                            <box-icon name='shopping-bag' color="#8c71db"></box-icon>
+                            <p class="mb-0">This Month</p>
+                        </div>
+                        <h2>Best Sellers
+                        </h2>
+                    </div>
+                
+                </div>
+                <div id="owl-two" class="owl-carousel owl-theme">
+                    <div class="item text-left">
+                        <a href="">
+                            <img  src="./img/product-29.png" class="img-fluid" alt="">
+                            <div class="product-content">
+                                <div class="inner">
+                                    <div class="product-price-variant">
+                                        <span class="price current-price ">$30</span>
+                                    </div>
+
+                                    <h5>Anime #001</h5>
+                                    
+                                    <div class="product-hover-action">
+                                       <button class="btn btn-primary">
+                                        Buy Product
+                                       </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="item text-left">
+                        <a href="">
+                            <img  src="./img/product-30.png" class="img-fluid" alt="">
+                            <div class="product-content">
+                                <div class="inner">
+                                    <div class="product-price-variant">
+                                        <span class="price current-price ">$40</span>
+                                    </div>
+
+                                    <h5>Anime #002</h5>
+                                    
+                                    <div class="product-hover-action">
+                                       <button class="btn btn-primary">
+                                        Buy Product
+                                       </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>  
+
+                    <div class="item text-left">
+                        <a href="">
+                            <img  src="./img/product-31.png" class="img-fluid" alt="">
+                            <div class="product-content">
+                                <div class="inner">
+                                    <div class="product-price-variant">
+                                        <span class="price current-price ">$50</span>
+                                    </div>
+
+                                    <h5>Anime #003</h5>
+                                    
+                                    <div class="product-hover-action">
+                                       <button class="btn btn-primary">
+                                        Buy Product
+                                       </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>  
+
+                    <div class="item text-left">
+                        <a href="">
+                            <img  src="./img/product-32.png" class="img-fluid" alt="">
+                            <div class="product-content">
+                                <div class="inner">
+                                    <div class="product-price-variant">
+                                        <span class="price current-price ">$23</span>
+                                    </div>
+
+                                    <h5>Anime #004</h5>
+                                    
+                                    <div class="product-hover-action">
+                                       <button class="btn btn-primary">
+                                        Buy Product
+                                       </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>  
+
+                    <div class="item text-left">
+                        <a href="">
+                            <img  src="./img/product-33.png" class="img-fluid" alt="">
+                            <div class="product-content">
+                                <div class="inner">
+                                    <div class="product-price-variant">
+                                        <span class="price current-price ">$60</span>
+                                    </div>
+
+                                    <h5>Anime #005</h5>
+                                    
+                                    <div class="product-hover-action">
+                                       <button class="btn btn-primary">
+                                        Buy Product
+                                       </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>  
+
+                    <div class="item text-left">
+                        <a href="">
+                            <img  src="./img/product-30.png" class="img-fluid" alt="">
+                            <div class="product-content">
+                                <div class="inner">
+                                    <div class="product-price-variant">
+                                        <span class="price current-price ">$35</span>
+                                    </div>
+
+                                    <h5>Anime #006</h5>
+                                    
+                                    <div class="product-hover-action">
+                                       <button class="btn btn-primary">
+                                        Buy Product
+                                       </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>  
+
+                    <div class="item text-left">
+                        <a href="">
+                            <img  src="./img/product-32.png" class="img-fluid" alt="">
+                            <div class="product-content">
+                                <div class="inner">
+                                    <div class="product-price-variant">
+                                        <span class="price current-price ">$64</span>
+                                    </div>
+
+                                    <h5>Anime #007</h5>
+                                    
+                                    <div class="product-hover-action">
+                                       <button class="btn btn-primary">
+                                        Buy Product
+                                       </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>  
+
+                    <div class="item text-left">
+                        <a href="">
+                            <img  src="./img/product-33.png" class="img-fluid" alt="">
+                            <div class="product-content">
+                                <div class="inner">
+                                    <div class="product-price-variant">
+                                        <span class="price current-price ">$72</span>
+                                    </div>
+
+                                    <h5>Anime #008</h5>
+                                    
+                                    <div class="product-hover-action">
+                                       <button class="btn btn-primary">
+                                        Buy Product
+                                       </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Best Sellers Section End -->
+
+    <!-- Filter New Arrival Start -->
+    <section class="filter-cards padding-main">
+        <div class="container">
+            <div class="slider-area d-flex justify-content-between mb-40">
+                <div class="section-title">
+                    <div class="d-flex gap-2 ctg">
+                        <box-icon name='shopping-bag' color="#8c71db"></box-icon>
+                        <p class="mb-0">Our Products</p>
+                    </div>
+                    <h2>New Arraival Products
+                    </h2>
+                </div>
+
+                <div class="filter-btns d-flex align-items-end gap-3">
+                    <button class="btn btn-primary active">
+                        All
+                    </button>
+
+                    <button class="btn btn-primary" data-btn="1">
+                        Art
+                    </button>
+
+                    <button class="btn btn-primary" data-btn="2">
+                        Music
+                    </button>
+
+                    <button class="btn btn-primary" data-btn="3">
+                        PhotoGraphy
+                    </button>
+
+                    <button class="btn btn-primary" data-btn="4">
+                        Sports
+                    </button>
+                </div>
+            
+            </div>
+            <div class="filtered-cards">
+                <div class="row">
+                    <div class="item text-left col-md-3" data-img="1">
+                        <a href="">
+                            <img  src="./img/product-15 (1).png" class="img-fluid" alt="" >
+                            <div class="product-content">
+                                <div class="inner">
+                                    <h5>Anime #001</h5>
+
+                                    <div class="product-price-variant">
+                                        <span class="price current-price ">$4000</span>
+                                    </div>
+                                    
+                                    <div class="product-hover-action d-none">
+                                       <button class="btn btn-primary">
+                                        Buy Product
+                                       </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item text-left col-md-3" data-img="1">
+                        <a href="">
+                            <img  src="./img/product-2.png" class="img-fluid" alt="" >
+                            <div class="product-content">
+                                <div class="inner">
+                                    <h5>Anime #002</h5>
+
+                                    <div class="product-price-variant">
+                                        <span class="price current-price ">$3000</span>
+                                    </div>
+                                    
+                                    <div class="product-hover-action d-none">
+                                       <button class="btn btn-primary">
+                                        Buy Product
+                                       </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item text-left col-md-3" data-img="2">
+                        <a href="">
+                            <img  src="./img/product-3.png" class="img-fluid" >
+                            <div class="product-content">
+                                <div class="inner">
+                                    <h5>Anime #003</h5>
+
+                                    <div class="product-price-variant">
+                                        <span class="price current-price ">$1200</span>
+                                    </div>
+                                    
+                                    <div class="product-hover-action d-none">
+                                       <button class="btn btn-primary">
+                                        Buy Product
+                                       </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item text-left col-md-3"  data-img="4">
+                        <a href="">
+                            <img  src="./img/product-4.png" class="img-fluid">
+                            <div class="product-content">
+                                <div class="inner">
+                                    <h5>Anime #004</h5>
+
+                                    <div class="product-price-variant">
+                                        <span class="price current-price ">$4000</span>
+                                    </div>
+                                    
+                                    <div class="product-hover-action d-none">
+                                       <button class="btn btn-primary">
+                                        Buy Product
+                                       </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item text-left col-md-3" data-img="1">
+                        <a href="">
+                            <img  src="./img/product-5.png"" class="img-fluid" >
+                            <div class="product-content">
+                                <div class="inner">
+                                    <h5>Anime #005</h5>
+
+                                    <div class="product-price-variant">
+                                        <span class="price current-price ">$5000</span>
+                                    </div>
+                                    
+                                    <div class="product-hover-action d-none">
+                                       <button class="btn btn-primary">
+                                        Buy Product
+                                       </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item text-left col-md-3" data-img="3">
+                        <a href="">
+                            <img  src="./img/product-6.png" class="img-fluid" >
+                            <div class="product-content">
+                                <div class="inner">
+                                    <h5>Anime #006</h5>
+
+                                    <div class="product-price-variant">
+                                        <span class="price current-price ">$7000</span>
+                                    </div>
+                                    
+                                    <div class="product-hover-action d-none">
+                                       <button class="btn btn-primary">
+                                        Buy Product
+                                       </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item text-left col-md-3" data-img="4">
+                        <a href="">
+                            <img  src="./img/product-7.png" class="img-fluid" >
+                            <div class="product-content">
+                                <div class="inner">
+                                    <h5>Anime #007</h5>
+
+                                    <div class="product-price-variant">
+                                        <span class="price current-price ">$8000</span>
+                                    </div>
+                                    
+                                    <div class="product-hover-action d-none">
+                                       <button class="btn btn-primary">
+                                        Buy Product
+                                       </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="item text-left col-md-3" data-img="3">
+                        <a href="">
+                            <img  src="./img/product-8.png" class="img-fluid" >
+                            <div class="product-content">
+                                <div class="inner">
+                                    <h5>Anime #008</h5>
+
+                                    <div class="product-price-variant">
+                                        <span class="price current-price ">$5500</span>
+                                    </div>
+                                    
+                                    <div class="product-hover-action d-none">
+                                       <button class="btn btn-primary">
+                                        Buy Product
+                                       </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Filter New Arrival End -->
+
+    <!-- Most Sold Section Start -->
+    <section class="most-sold">
+        <div class="container">
+            <div class="section-title text-center mb-40">
+                <div class="d-flex gap-2 ctg text-center d-flex justify-content-center">
+                    <box-icon name='shopping-bag' color="#8c71db"></box-icon>
+                    <p class="mb-0">Most Sold</p>
+                </div>
+                <h2>Most Sold Last 7 days
+                </h2>
+            </div>
+            <div class="boxes d-flex flex-wrap justify-content-between pb-50">
+                <div class="col-md-4 box d-flex">
+                    <div class="img-box">
+                        <img src="./img/product-18.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h6 class="product-title">
+                            <a>Anime #200 </a>
+                        </h6>
+                        <div class="product-price-variant">
+                            <span class="price current-price">$5000</span>
+                        </div>
+                        <div class="product-cart">
+                            <button class="btn btn-dd">Buy Product</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 box d-flex">
+                    <div class="img-box">
+                        <img src="./img/product-22.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h6 class="product-title">
+                            <a>Anime #201 </a>
+                        </h6>
+                        <div class="product-price-variant">
+                            <span class="price current-price">$7955</span>
+                        </div>
+                        <div class="product-cart">
+                            <button class="btn btn-dd">Buy Product</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 box d-flex">
+                    <div class="img-box">
+                        <img src="./img/product-19.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h6 class="product-title">
+                            <a>Anime #202 </a>
+                        </h6>
+                        <div class="product-price-variant">
+                            <span class="price current-price">$2959</span>
+                        </div>
+                        <div class="product-cart">
+                            <button class="btn btn-dd">Buy Product</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 box d-flex">
+                    <div class="img-box">
+                        <img src="./img/product-23.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h6 class="product-title">
+                            <a>Anime #203 </a>
+                        </h6>
+                        <div class="product-price-variant">
+                            <span class="price current-price">$3000</span>
+                        </div>
+                        <div class="product-cart">
+                            <button class="btn btn-dd">Buy Product</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 box d-flex">
+                    <div class="img-box">
+                        <img src="./img/product-20.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h6 class="product-title">
+                            <a>Anime #204 </a>
+                        </h6>
+                        <div class="product-price-variant">
+                            <span class="price current-price">$2000</span>
+                        </div>
+                        <div class="product-cart">
+                            <button class="btn btn-dd">Buy Product</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 box d-flex">
+                    <div class="img-box">
+                        <img src="./img/product-24.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h6 class="product-title">
+                            <a>Anime #205 </a>
+                        </h6>
+                        <div class="product-price-variant">
+                            <span class="price current-price">$3000</span>
+                        </div>
+                        <div class="product-cart">
+                            <button class="btn btn-dd">Buy Product</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 box d-flex">
+                    <div class="img-box">
+                        <img src="./img/product-28.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h6 class="product-title">
+                            <a>Anime #206 </a>
+                        </h6>
+                        <div class="product-price-variant">
+                            <span class="price current-price">$5000</span>
+                        </div>
+                        <div class="product-cart">
+                            <button class="btn btn-dd">Buy Product</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 box d-flex">
+                    <div class="img-box">
+                        <img src="./img/product-25.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h6 class="product-title">
+                            <a>Anime #201 </a>
+                        </h6>
+                        <div class="product-price-variant">
+                            <span class="price current-price">$2300</span>
+                        </div>
+                        <div class="product-cart">
+                            <button class="btn btn-dd">Buy Product</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 box d-flex">
+                    <div class="img-box">
+                        <img src="./img/product-26.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="product-content">
+                        <h6 class="product-title">
+                            <a>Anime #202 </a>
+                        </h6>
+                        <div class="product-price-variant">
+                            <span class="price current-price">$5020</span>
+                        </div>
+                        <div class="product-cart">
+                            <button class="btn btn-dd">Buy Product</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Most Sold Section End -->
+
+    <!-- Buy NFT Section Start -->
+    <section class="buy-nft padding-main">
+        <div class="container">
+            <div class="section-title text-center mb-40">
+                <h2>How to buy NFTs
+                </h2>
+            </div>
+            <div class="nft-boxes d-flex justify-content-between">
+                <div class="col-md-3">
+                    <div class="service-box how-to-sell">
+                        <div class="icon">
+                            <img src="img/choose.png" alt="Service">
+                        </div>
+                        <h6 class="title">Choose Your Favourite</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quas expedita veritatis ipsum, culpa, asperiores.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="service-box how-to-sell">
+                        <div class="icon">
+                            <img src="img/protection.png" alt="Service">
+                        </div>
+                        <h6 class="title">Verify NFTs</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quas expedita veritatis ipsum, culpa, asperiores.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="service-box how-to-sell">
+                        <div class="icon">
+                            <img src="img/purchasing.png" alt="Service">
+                        </div>
+                        <h6 class="title">Purchase NFTS</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quas expedita veritatis ipsum, culpa, asperiores.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="service-box how-to-sell">
+                        <div class="icon">
+                            <img src="img/dancing.png" alt="Service">
+                        </div>
+                        <h6 class="title">Enjoy!</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quas expedita veritatis ipsum, culpa, asperiores.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Buy NFT  Section End -->
+
+    <!-- Video Section Start -->
+    <section class="video-banner-area">
+        <div class="container">
+            <div class="product-area padding-main">
+                <div class="section-title text-center mb-40">
+                    <div class="d-flex gap-2 ctg text-center d-flex justify-content-center mb-3">
+                        <box-icon type='solid' name='video-plus' color="#8c71db" ></box-icon>
+                        <p class="mb-0">Most Sold</p>
+                    </div>
+                    <h2>Meet The Greater</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="video-banner">
+                            <img src="./img/bg-image-7.jpg" alt="Images">
+                            <div class="popup-video-icon">
+                                <a href="https://www.youtube.com/watch?v=FkUn86bH34M" class="popup-youtube video-icon">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Video Section End -->
+
+    <!-- Nft News Section Start -->
+    <section class="nft-news padding-main">
+        <div class="container">
+            <div class="section-title text-center mb-40">
+                <div class="d-flex gap-2 ctg text-center d-flex justify-content-center mb-3">
+                    <box-icon type='solid' name='video-plus' color="#8c71db" ></box-icon>
+                    <p class="mb-0">Regular Post</p>
+                </div>
+                <h2>Latest NFT News</h2>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="content-blog blog-grid">
+                        <div class="inner">
+                            <div class="thumbnail">
+                                <img src="./img/blog-10.png" class="img-fluid" alt="">
+                                <div class="blog-category">
+                                    <a href="#">Digital Art's</a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h5 class="title"><a >Keeping yourself safe when buying NFTs on eTrade</a></h5>
+                                <div class="read-more-btn d-flex align-items-center">
+                                    <p class="mb-0 me-2">Read More</p>
+                                    <box-icon name='right-arrow-alt'></box-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="content-blog blog-grid">
+                        <div class="inner">
+                            <div class="thumbnail">
+                                <img src="./img/blog-11.png" class="img-fluid" alt="">
+                                <div class="blog-category">
+                                    <a href="#">PhotoGraphy</a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h5 class="title"><a >Important updates for listing and delisting your NFTs</a></h5>
+                                <div class="read-more-btn d-flex align-items-center">
+                                    <p class="mb-0 me-2">Read More</p>
+                                    <box-icon name='right-arrow-alt'></box-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="content-blog blog-grid">
+                        <div class="inner">
+                            <div class="thumbnail">
+                                <img src="./img/blog-12.png" class="img-fluid" alt="">
+                                <div class="blog-category">
+                                    <a href="#">Music</a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h5 class="title"><a >10 tips for avoiding scams and staying safe on the decentralized web</a></h5>
+                                <div class="read-more-btn d-flex align-items-center">
+                                    <p class="mb-0 me-2">Read More</p>
+                                    <box-icon name='right-arrow-alt'></box-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Nft News Section End -->
+
+    <!-- Footer Start -->
+    <footer class="axil-footer-area footer-style-1 footer-dark">
+        <!-- Start Footer Top Area  -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <!-- Start Single Widget  -->
+                    <div class="col-md-3 col-sm-12">
+                        <div class="axil-footer-widget">
+                            <div class="logo mb--30">
+                                <a href="index.html">
+                                    <img class="light-logo" src="./img/logo-light.png" alt="Logo Images">
+                                </a>
+                            </div>
+                            <div class="inner">
+                                <p>685 Market Street <br>
+                                Las Vegas, LA 95820, <br>
+                                United States.
+                                </p>
+                                <div class="social-share d-flex">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                    <a href="#"><i class="fab fa-discord"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Widget  -->
+                    <!-- Start Single Widget  -->
+                    <div class="col-md-3 col-sm-4">
+                        <div class="axil-footer-widget">
+                            <h5 class="widget-title">ABOUT</h5>
+                            <div class="inner">
+                                <ul>
+                                    <li><a href="about-us.html">About</a></li>
+                                    <li><a href="about-us.html">Who We Are</a></li>
+                                    <li><a href="blog.html">Latest Post</a></li>
+                                    <li><a href="shop-sidebar.html">New Arraival</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Widget  -->
+                    <!-- Start Single Widget  -->
+                    <div class="col-md-3 col-sm-4">
+                        <div class="axil-footer-widget">
+                            <h5 class="widget-title">ACCOUNT</h5>
+                            <div class="inner">
+                                <ul>
+                                    <li><a href="my-account.html">My Account</a></li>
+                                    <li><a href="sign-up.html">Login / Register</a></li>
+                                    <li><a href="cart.html">Cart</a></li>
+                                    <li><a href="wishlist.html">Wishlist</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Widget  -->
+                    <!-- Start Single Widget  -->
+                    <div class="col-md-3 col-sm-4">
+                        <div class="axil-footer-widget">
+                            <h5 class="widget-title">SUPPORT</h5>
+                            <div class="inner">
+                                <ul>
+                                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                    <li><a href="terms-of-service.html">Terms Of Use</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Widget  -->
+                </div>
+            </div>
+        </div>
+        <!-- End Footer Top Area  -->
+        <!-- Start Copyright Area  -->
+        <div class="copyright-area copyright-default separator-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-7 col-lg-12">
+                        <div class="copyright-left d-flex flex-wrap justify-content-xl-start justify-content-center">
+                            <ul class="quick-link">
+                                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                                <li><a href="terms-of-service.html">Terms of Service</a></li>
+                            </ul>
+                            <ul class="quick-link qc">
+                                <li>© 2022. All rights reserved by <a target="_blank" href="https://axilthemes.com/">Axilthemes</a>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-12">
+                        <div class="copyright-right d-flex flex-wrap justify-content-xl-end justify-content-center align-items-center">
+                            <span class="card-text">Accept For</span>
+                            <ul class="payment-icons-bottom quick-link">
+                                <li><img src="./img/cart-1.png" alt="paypal cart"></li>
+                                <li><img src="./img/cart-2.png" alt="paypal cart"></li>
+                                <li><img src="./img/cart-3.png" alt="paypal cart"></li>
+                                <li><img src="./img/cart-6.png" alt="paypal cart"></li>
+                                <li><img src="./img/cart-5.png" alt="paypal cart"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Copyright Area  -->
+    </footer>
+    <!-- Footer End -->
+
+
+
+
+    <div class="card-sidebar" id="card-sidebar">
+        <div class="cart-content-wrap">
+            <div class="cart-header">
+                <h2 class="header-title">Cart review</h2>
+                <button class="cart-close sidebar-close"><box-icon name='x' ></box-icon></button>
+            </div>
+            <div class="cart-body">
+                <ul class="cart-item-list p-0">
+             
+                
+                </ul>
+            </div>
+            <div class="cart-footer">
+                <h3 class="cart-subtotal">
+                    <span class="subtotal-title">Subtotal:</span>
+                    <span class="subtotal-amount">$0</span>
+                </h3>
+                <div class="group-btn">
+                    <a href="cart.html" class="axil-btn btn-bg-primary viewcart-btn">View Cart</a>
+                    <a href="checkout.html" class="axil-btn btn-bg-secondary checkout-btn">Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+   
+  
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+<script>
+
+$(document).ready(function(){
+    $('#owl-one').owlCarousel({
+    loop:true,
+    margin:20,
+    nav:true,
+    navText: ["<i class='fa fa-long-arrow-left'></i>","<i class='fa fa-long-arrow-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:6
+        }
+    }
+})
+$('#owl-two').owlCarousel({
+    loop:true,
+    margin:20,
+    nav:true,
+    navText: ["<i class='fa fa-long-arrow-left'></i>","<i class='fa fa-long-arrow-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:4
+        }
+    }
+})
+
+$('.slider').owlCarousel({
+    loop:true,
+    margin:20,
+    nav:true,
+    navText: ["<i class='fa fa-long-arrow-left'></i>","<i class='fa fa-long-arrow-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:6
+        }
+    }
+})
+
+});
+
+
+
+</script>
+
+<div id="backdrop" class=""></div>
+<script src="./js/data.js"></script>
+
+<script src="./js/filter.js"></script>
+</body>
+</html>
